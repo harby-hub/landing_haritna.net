@@ -116,6 +116,19 @@ export class ScarabScene {
 
         this.scarab.add( model )
 
+        // Wireframe sphere overlay around the scarab
+        const wireGeo = new THREE.IcosahedronGeometry( maxDim * scale * 0.55, 1 )
+        const wireMat = new THREE.LineBasicMaterial({
+          color: 0x8899BB,
+          linewidth: 3,
+          transparent: true,
+          opacity: 0.5,
+        })
+        const wireframe = new THREE.WireframeGeometry( wireGeo )
+        const wireOverlay = new THREE.LineSegments( wireframe, wireMat )
+        wireOverlay.name = 'wireOverlay'
+        this.scarab.add( wireOverlay )
+
         // Play animations if any
         if ( gltf.animations.length > 0 ) {
           this.mixer = new THREE.AnimationMixer( model )
@@ -169,6 +182,15 @@ export class ScarabScene {
     if ( this.isMobile && mouseX.value === 0 && mouseY.value === 0 ) {
       this.targetRotY = Math.sin( elapsed * 0.3 ) * 0.5
       this.targetRotX = Math.sin( elapsed * 0.2 ) * 0.12
+    }
+
+    // Wire overlay slow rotation + pulse
+    const wire = this.scarab.getObjectByName( 'wireOverlay' )
+    if ( wire ) {
+      wire.rotation.y = elapsed * 0.08
+      wire.rotation.x = elapsed * 0.04
+      const scale = 1 + Math.sin( elapsed * 1.0 ) * 0.015
+      wire.scale.setScalar( scale )
     }
 
     // Particles orbit + mouse repulsion
