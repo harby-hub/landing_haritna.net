@@ -2,7 +2,7 @@ import { createI18n } from 'vue-i18n'
 import en from './en'
 import ar from './ar'
 
-const savedLocale = localStorage.getItem( 'haritna-locale' ) || 'ar'
+const savedLocale = localStorage.getItem( 'haritna-locale' ) || 'en'
 
 const i18n = createI18n({
   legacy: false,

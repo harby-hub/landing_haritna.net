@@ -16,6 +16,6 @@ app.mount( '#app' )
 const { init } = useTheme()
 init()
 
-const locale = localStorage.getItem( 'haritna-locale' ) || 'ar'
+const locale = localStorage.getItem( 'haritna-locale' ) || 'en'
 document.documentElement.lang = locale
 document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr'

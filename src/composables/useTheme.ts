@@ -1,11 +1,11 @@
 import { ref, watch } from 'vue'
 
-const isDark = ref( true )
+const isDark = ref( false )
 
 function init() {
   const saved = localStorage.getItem( 'haritna-theme' )
-  if ( saved === 'light' ) {
-    isDark.value = false
+  if ( saved === 'dark' ) {
+    isDark.value = true
   }
   applyTheme()
 }
