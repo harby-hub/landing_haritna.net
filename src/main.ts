@@ -12,6 +12,14 @@ const app = createApp( App )
 app.use( i18n )
 app.mount( '#app' )
 
+// One-time reset: clear old defaults (v1 used ar+dark)
+const SETTINGS_VERSION = '2'
+if ( localStorage.getItem( 'haritna-v' ) !== SETTINGS_VERSION ) {
+  localStorage.removeItem( 'haritna-theme' )
+  localStorage.removeItem( 'haritna-locale' )
+  localStorage.setItem( 'haritna-v', SETTINGS_VERSION )
+}
+
 // Initialize theme & locale direction
 const { init } = useTheme()
 init()

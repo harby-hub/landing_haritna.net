@@ -22,7 +22,7 @@ function scrollToEcosystem() {
     <div class="absolute inset-0 bg-gradient-to-b from-background/40 via-background/10 to-background pointer-events-none" />
 
     <!-- Logo pinned to top -->
-    <div class="absolute top-40 sm:top-44 inset-x-0 z-10 flex justify-center pointer-events-none">
+    <div class="absolute top-20 sm:top-24 inset-x-0 z-10 flex justify-center pointer-events-none">
       <img
         src="/logo-tagline.png"
         alt="Haritna Technologies — تكنولوجيا طالعة من الأصل"
