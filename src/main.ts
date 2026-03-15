@@ -1,0 +1,21 @@
+import { createApp } from 'vue'
+import '@fontsource/cairo/400.css'
+import '@fontsource/cairo/600.css'
+import '@fontsource/cairo/700.css'
+import '@fontsource/cairo/800.css'
+import './assets/main.css'
+import App from './App.vue'
+import i18n from './i18n'
+import { useTheme } from './composables/useTheme'
+
+const app = createApp( App )
+app.use( i18n )
+app.mount( '#app' )
+
+// Initialize theme & locale direction
+const { init } = useTheme()
+init()
+
+const locale = localStorage.getItem( 'haritna-locale' ) || 'ar'
+document.documentElement.lang = locale
+document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr'

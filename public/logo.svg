@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="100%" style="stop-color:#3F51B5"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6D00"/>
+      <stop offset="100%" style="stop-color:#FF8F00"/>
+    </linearGradient>
+    <linearGradient id="shellGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5C6BC0"/>
+      <stop offset="50%" style="stop-color:#3F51B5"/>
+      <stop offset="100%" style="stop-color:#283593"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="96" stroke="url(#bgGrad)" stroke-width="2" fill="none" opacity="0.3"/>
+  <circle cx="100" cy="100" r="88" stroke="url(#accentGrad)" stroke-width="1" fill="none" opacity="0.2"/>
+
+  <!-- Scarab body -->
+  <ellipse cx="100" cy="105" rx="38" ry="48" fill="url(#shellGrad)"/>
+
+  <!-- Wing split line -->
+  <line x1="100" y1="65" x2="100" y2="145" stroke="url(#accentGrad)" stroke-width="2"/>
+
+  <!-- Wing ridges left -->
+  <path d="M 85 80 Q 72 100 78 130" stroke="#7986CB" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 78 85 Q 67 105 72 125" stroke="#7986CB" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- Wing ridges right -->
+  <path d="M 115 80 Q 128 100 122 130" stroke="#7986CB" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 122 85 Q 133 105 128 125" stroke="#7986CB" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- Head/Pronotum -->
+  <ellipse cx="100" cy="62" rx="25" ry="16" fill="#283593"/>
+  <ellipse cx="100" cy="55" rx="18" ry="10" fill="#1A237E"/>
+
+  <!-- Eyes -->
+  <circle cx="87" cy="58" r="4" fill="#FF6D00"/>
+  <circle cx="113" cy="58" r="4" fill="#FF6D00"/>
+  <circle cx="87" cy="58" r="2" fill="#FFAB40"/>
+  <circle cx="113" cy="58" r="2" fill="#FFAB40"/>
+
+  <!-- Legs -->
+  <!-- Front -->
+  <path d="M 75 70 L 58 52 L 50 48" stroke="#283593" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 125 70 L 142 52 L 150 48" stroke="#283593" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Middle -->
+  <path d="M 62 95 L 42 90 L 32 88" stroke="#283593" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 138 95 L 158 90 L 168 88" stroke="#283593" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Back -->
+  <path d="M 68 125 L 50 138 L 42 148" stroke="#283593" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M 132 125 L 150 138 L 158 148" stroke="#283593" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Tech circuit decoration -->
+  <circle cx="100" cy="100" r="60" stroke="#5C6BC0" stroke-width="0.5" fill="none" opacity="0.15" stroke-dasharray="4 6"/>
+  <circle cx="100" cy="100" r="72" stroke="#FF6D00" stroke-width="0.5" fill="none" opacity="0.1" stroke-dasharray="2 8"/>
+
+  <!-- H letter mark (subtle) -->
+  <text x="100" y="170" text-anchor="middle" font-family="Cairo, sans-serif" font-weight="800" font-size="18" fill="#7986CB" opacity="0.6">حارتنا</text>
+</svg>

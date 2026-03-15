@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+@import '@fontsource/cairo/400.css';
+@import '@fontsource/cairo/600.css';
+@import '@fontsource/cairo/700.css';
+@import '@fontsource/cairo/800.css';
+
+@theme {
+  --font-cairo: 'Cairo', sans-serif;
+
+  /* Dark theme (default) — based on logo: navy #1B2A4A + orange #E8613A */
+  --color-primary: #2A3F6A;
+  --color-primary-light: #4A6A9A;
+  --color-primary-dark: #1B2A4A;
+  --color-accent: #E8613A;
+  --color-accent-dark: #C84E2E;
+  --color-background: #0A0F1A;
+  --color-foreground: #E0E4EE;
+  --color-card: #111828;
+  --color-muted: #182030;
+  --color-muted-foreground: #8899BB;
+  --color-border: #243050;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-cairo);
+}
+
+/* Light theme — clean, professional */
+html.light {
+  --color-primary: #1B2A4A;
+  --color-primary-light: #2A3F6A;
+  --color-primary-dark: #0D1A30;
+  --color-accent: #E8613A;
+  --color-accent-dark: #C84E2E;
+  --color-background: #F8F9FC;
+  --color-foreground: #1B2A4A;
+  --color-card: #FFFFFF;
+  --color-muted: #EEF0F6;
+  --color-muted-foreground: #5A6A8A;
+  --color-border: #D0D6E4;
+}
+
+/* Light mode — cards get subtle shadows for depth */
+html.light .bg-card {
+  box-shadow: 0 1px 4px rgba(27, 42, 74, 0.08);
+}
+
+/* Light mode — hero text readability over 3D canvas */
+html.light #hero h1,
+html.light #hero p {
+  text-shadow: 0 1px 12px rgba(248, 249, 252, 0.9);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
