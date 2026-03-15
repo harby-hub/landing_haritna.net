@@ -4,8 +4,7 @@ import * as THREE from 'three'
 const NAVY_LIGHT = 0x2A3F6A
 const ORANGE = 0xE8613A
 
-export function createParticles(): THREE.Points {
-  const count = 1000
+export function createParticles( count = 1000 ): THREE.Points {
   const positions = new Float32Array( count * 3 )
   const colors = new Float32Array( count * 3 )
 

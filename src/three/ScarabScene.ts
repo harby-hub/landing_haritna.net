@@ -74,11 +74,9 @@ export class ScarabScene {
     // Load GLB model
     this.loadModel()
 
-    // Particles
-    this.particles = createParticles()
-    if ( !this.isMobile ) {
-      this.scene.add( this.particles )
-    }
+    // Particles — fewer on mobile for performance
+    this.particles = createParticles( this.isMobile ? 300 : 1000 )
+    this.scene.add( this.particles )
 
     // Background shader
     this.arabesque = createArabesquePlane()
@@ -167,11 +165,10 @@ export class ScarabScene {
     // Subtle Z tilt following mouse X for natural feel
     this.scarab.rotation.z += ( -mouseX.value * 0.08 - this.scarab.rotation.z ) * 0.03
 
-    // Auto rotation for mobile
-    if ( this.isMobile ) {
-      this.scarab.rotation.y = Math.sin( elapsed * 0.3 ) * 0.5
-      this.scarab.rotation.x = -0.15 + Math.sin( elapsed * 0.2 ) * 0.12
-      this.scarab.rotation.z = Math.sin( elapsed * 0.25 ) * 0.05
+    // Auto idle drift on mobile (only when not touching)
+    if ( this.isMobile && mouseX.value === 0 && mouseY.value === 0 ) {
+      this.targetRotY = Math.sin( elapsed * 0.3 ) * 0.5
+      this.targetRotX = Math.sin( elapsed * 0.2 ) * 0.12
     }
 
     // Particles orbit + mouse repulsion

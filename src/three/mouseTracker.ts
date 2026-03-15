@@ -5,12 +5,30 @@ export const mouseY = ref( 0 )
 
 let initialized = false
 
+function update( clientX: number, clientY: number ) {
+  mouseX.value = ( clientX / window.innerWidth ) * 2 - 1
+  mouseY.value = -( clientY / window.innerHeight ) * 2 + 1
+}
+
 export function initMouseTracker() {
   if ( initialized ) return
   initialized = true
 
   window.addEventListener( 'mousemove', ( e ) => {
-    mouseX.value = ( e.clientX / window.innerWidth ) * 2 - 1
-    mouseY.value = -( e.clientY / window.innerHeight ) * 2 + 1
+    update( e.clientX, e.clientY )
   })
+
+  window.addEventListener( 'touchmove', ( e ) => {
+    const touch = e.touches[0]
+    if ( touch ) {
+      update( touch.clientX, touch.clientY )
+    }
+  }, { passive: true })
+
+  window.addEventListener( 'touchstart', ( e ) => {
+    const touch = e.touches[0]
+    if ( touch ) {
+      update( touch.clientX, touch.clientY )
+    }
+  }, { passive: true })
 }
