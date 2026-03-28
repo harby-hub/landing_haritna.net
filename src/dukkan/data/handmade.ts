@@ -1,0 +1,268 @@
+import type { ProfessionConfig } from './types'
+
+const handmade: ProfessionConfig = {
+  slug: 'handmade',
+  nameKey: 'stories.handmade.name',
+  subtitleKey: 'stories.handmade.subtitle',
+  emoji: '🧶',
+  suggestedItems: [
+    { nameKey: 'stories.handmade.items.s1', priceKey: 'stories.handmade.items.p1', durationKey: 'stories.handmade.items.d1', type: 'service' },
+    { nameKey: 'stories.handmade.items.s2', priceKey: 'stories.handmade.items.p2', durationKey: 'stories.handmade.items.d2', type: 'service' },
+    { nameKey: 'stories.handmade.items.s3', priceKey: 'stories.handmade.items.p3', durationKey: 'stories.handmade.items.d3', type: 'product' },
+    { nameKey: 'stories.handmade.items.s4', priceKey: 'stories.handmade.items.p4', type: 'product' },
+    { nameKey: 'stories.handmade.items.s5', priceKey: 'stories.handmade.items.p5', type: 'product' },
+    { nameKey: 'stories.handmade.items.s6', priceKey: 'stories.handmade.items.p6', type: 'custom' },
+  ],
+  phases: [
+    {
+      id: 'register',
+      labelKey: 'stories.common.p1.label',
+      titleKey: 'stories.common.p1.title',
+      descKey: 'stories.handmade.p1.desc',
+      emoji: '📱',
+  suggestedItems: [
+    { nameKey: 'stories.handmade.items.s1', priceKey: 'stories.handmade.items.p1', durationKey: 'stories.handmade.items.d1', type: 'service' },
+    { nameKey: 'stories.handmade.items.s2', priceKey: 'stories.handmade.items.p2', durationKey: 'stories.handmade.items.d2', type: 'service' },
+    { nameKey: 'stories.handmade.items.s3', priceKey: 'stories.handmade.items.p3', durationKey: 'stories.handmade.items.d3', type: 'product' },
+    { nameKey: 'stories.handmade.items.s4', priceKey: 'stories.handmade.items.p4', type: 'product' },
+    { nameKey: 'stories.handmade.items.s5', priceKey: 'stories.handmade.items.p5', type: 'product' },
+    { nameKey: 'stories.handmade.items.s6', priceKey: 'stories.handmade.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.handmade.p1.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p1.s1.title',
+          descKey: 'stories.handmade.p1.s1.desc',
+          bullets: ['stories.common.p1.s1.b1', 'stories.common.p1.s1.b2', 'stories.common.p1.s1.b3'],
+          screenshot: { type: 'phone', mobile: 'register.png' },
+        },
+        {
+          titleKey: 'stories.common.p1.s2.title',
+          descKey: 'stories.handmade.p1.s2.desc',
+          bullets: ['stories.common.p1.s2.b1', 'stories.common.p1.s2.b2', 'stories.common.p1.s2.b3'],
+          screenshot: { type: 'phone', mobile: 'login.png' },
+        },
+      ],
+    },
+    {
+      id: 'company',
+      labelKey: 'stories.common.p2.label',
+      titleKey: 'stories.common.p2.title',
+      descKey: 'stories.handmade.p2.desc',
+      emoji: '🏪',
+  suggestedItems: [
+    { nameKey: 'stories.handmade.items.s1', priceKey: 'stories.handmade.items.p1', durationKey: 'stories.handmade.items.d1', type: 'service' },
+    { nameKey: 'stories.handmade.items.s2', priceKey: 'stories.handmade.items.p2', durationKey: 'stories.handmade.items.d2', type: 'service' },
+    { nameKey: 'stories.handmade.items.s3', priceKey: 'stories.handmade.items.p3', durationKey: 'stories.handmade.items.d3', type: 'product' },
+    { nameKey: 'stories.handmade.items.s4', priceKey: 'stories.handmade.items.p4', type: 'product' },
+    { nameKey: 'stories.handmade.items.s5', priceKey: 'stories.handmade.items.p5', type: 'product' },
+    { nameKey: 'stories.handmade.items.s6', priceKey: 'stories.handmade.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.handmade.p2.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p2.s1.title',
+          descKey: 'stories.handmade.p2.s1.desc',
+          bullets: ['stories.common.p2.s1.b1', 'stories.common.p2.s1.b2', 'stories.common.p2.s1.b3'],
+          screenshot: { type: 'phone', mobile: 'company-create.png' },
+        },
+        {
+          titleKey: 'stories.common.p2.s2.title',
+          descKey: 'stories.handmade.p2.s2.desc',
+          screenshot: { type: 'browser', desktop: 'dashboard.png', browserUrl: 'Your Company Dashboard' },
+        },
+      ],
+    },
+    {
+      id: 'products',
+      labelKey: 'stories.handmade.p3.label',
+      titleKey: 'stories.handmade.p3.title',
+      descKey: 'stories.handmade.p3.desc',
+      emoji: '🧵',
+  suggestedItems: [
+    { nameKey: 'stories.handmade.items.s1', priceKey: 'stories.handmade.items.p1', durationKey: 'stories.handmade.items.d1', type: 'service' },
+    { nameKey: 'stories.handmade.items.s2', priceKey: 'stories.handmade.items.p2', durationKey: 'stories.handmade.items.d2', type: 'service' },
+    { nameKey: 'stories.handmade.items.s3', priceKey: 'stories.handmade.items.p3', durationKey: 'stories.handmade.items.d3', type: 'product' },
+    { nameKey: 'stories.handmade.items.s4', priceKey: 'stories.handmade.items.p4', type: 'product' },
+    { nameKey: 'stories.handmade.items.s5', priceKey: 'stories.handmade.items.p5', type: 'product' },
+    { nameKey: 'stories.handmade.items.s6', priceKey: 'stories.handmade.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.handmade.p3.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p3.s1.title',
+          descKey: 'stories.handmade.p3.s1.desc',
+          screenshot: { type: 'phone-pair', mobile: 'company-categories.png', mobileAlt: 'category-tree.png' },
+        },
+        {
+          titleKey: 'stories.handmade.p3.s2.title',
+          descKey: 'stories.handmade.p3.s2.desc',
+          bullets: ['stories.handmade.p3.s2.b1', 'stories.handmade.p3.s2.b2', 'stories.handmade.p3.s2.b3'],
+          screenshot: { type: 'phone', mobile: 'product-create.png' },
+        },
+        {
+          titleKey: 'stories.common.p3.s3.title',
+          descKey: 'stories.handmade.p3.s3.desc',
+          screenshot: { type: 'browser', desktop: 'company-products.png', browserUrl: 'Your Handmade Collection' },
+        },
+      ],
+    },
+    {
+      id: 'custom-orders',
+      labelKey: 'stories.handmade.custom.label',
+      titleKey: 'stories.handmade.custom.title',
+      descKey: 'stories.handmade.custom.desc',
+      emoji: '🪡',
+  suggestedItems: [
+    { nameKey: 'stories.handmade.items.s1', priceKey: 'stories.handmade.items.p1', durationKey: 'stories.handmade.items.d1', type: 'service' },
+    { nameKey: 'stories.handmade.items.s2', priceKey: 'stories.handmade.items.p2', durationKey: 'stories.handmade.items.d2', type: 'service' },
+    { nameKey: 'stories.handmade.items.s3', priceKey: 'stories.handmade.items.p3', durationKey: 'stories.handmade.items.d3', type: 'product' },
+    { nameKey: 'stories.handmade.items.s4', priceKey: 'stories.handmade.items.p4', type: 'product' },
+    { nameKey: 'stories.handmade.items.s5', priceKey: 'stories.handmade.items.p5', type: 'product' },
+    { nameKey: 'stories.handmade.items.s6', priceKey: 'stories.handmade.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.handmade.custom.scenario',
+      steps: [
+        {
+          titleKey: 'stories.handmade.custom.s1.title',
+          descKey: 'stories.handmade.custom.s1.desc',
+          bullets: [
+            'stories.handmade.custom.s1.b1',
+            'stories.handmade.custom.s1.b2',
+            'stories.handmade.custom.s1.b3',
+          ],
+          screenshot: { type: 'phone', mobile: 'product-create.png' },
+        },
+        {
+          titleKey: 'stories.handmade.custom.s2.title',
+          descKey: 'stories.handmade.custom.s2.desc',
+          bullets: [
+            'stories.handmade.custom.s2.b1',
+            'stories.handmade.custom.s2.b2',
+            'stories.handmade.custom.s2.b3',
+          ],
+          screenshot: { type: 'browser-phone', desktop: 'orders-list.png', mobile: 'orders-list.png' },
+        },
+      ],
+    },
+    {
+      id: 'supplies',
+      labelKey: 'stories.handmade.supplies.label',
+      titleKey: 'stories.handmade.supplies.title',
+      descKey: 'stories.handmade.supplies.desc',
+      emoji: '📦',
+  suggestedItems: [
+    { nameKey: 'stories.handmade.items.s1', priceKey: 'stories.handmade.items.p1', durationKey: 'stories.handmade.items.d1', type: 'service' },
+    { nameKey: 'stories.handmade.items.s2', priceKey: 'stories.handmade.items.p2', durationKey: 'stories.handmade.items.d2', type: 'service' },
+    { nameKey: 'stories.handmade.items.s3', priceKey: 'stories.handmade.items.p3', durationKey: 'stories.handmade.items.d3', type: 'product' },
+    { nameKey: 'stories.handmade.items.s4', priceKey: 'stories.handmade.items.p4', type: 'product' },
+    { nameKey: 'stories.handmade.items.s5', priceKey: 'stories.handmade.items.p5', type: 'product' },
+    { nameKey: 'stories.handmade.items.s6', priceKey: 'stories.handmade.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.handmade.supplies.scenario',
+      steps: [
+        {
+          titleKey: 'stories.handmade.supplies.s1.title',
+          descKey: 'stories.handmade.supplies.s1.desc',
+          bullets: [
+            'stories.handmade.supplies.s1.b1',
+            'stories.handmade.supplies.s1.b2',
+            'stories.handmade.supplies.s1.b3',
+          ],
+          screenshot: { type: 'phone', mobile: 'product-create.png' },
+        },
+        {
+          titleKey: 'stories.handmade.supplies.s2.title',
+          descKey: 'stories.handmade.supplies.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'storefront.png', mobile: 'products.png' },
+        },
+      ],
+    },
+    {
+      id: 'page',
+      labelKey: 'stories.common.p4.label',
+      titleKey: 'stories.common.p4.title',
+      descKey: 'stories.handmade.p4.desc',
+      emoji: '🎨',
+  suggestedItems: [
+    { nameKey: 'stories.handmade.items.s1', priceKey: 'stories.handmade.items.p1', durationKey: 'stories.handmade.items.d1', type: 'service' },
+    { nameKey: 'stories.handmade.items.s2', priceKey: 'stories.handmade.items.p2', durationKey: 'stories.handmade.items.d2', type: 'service' },
+    { nameKey: 'stories.handmade.items.s3', priceKey: 'stories.handmade.items.p3', durationKey: 'stories.handmade.items.d3', type: 'product' },
+    { nameKey: 'stories.handmade.items.s4', priceKey: 'stories.handmade.items.p4', type: 'product' },
+    { nameKey: 'stories.handmade.items.s5', priceKey: 'stories.handmade.items.p5', type: 'product' },
+    { nameKey: 'stories.handmade.items.s6', priceKey: 'stories.handmade.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.handmade.p4.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p4.s1.title',
+          descKey: 'stories.handmade.p4.s1.desc',
+          screenshot: { type: 'browser', desktop: 'page-builder.png', browserUrl: 'Page Builder' },
+        },
+        {
+          titleKey: 'stories.common.p4.s2.title',
+          descKey: 'stories.handmade.p4.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'company-settings.png', mobile: 'company-settings.png' },
+        },
+      ],
+    },
+    {
+      id: 'orders',
+      labelKey: 'stories.common.p5.label',
+      titleKey: 'stories.common.p5.title',
+      descKey: 'stories.handmade.p5.desc',
+      emoji: '🎉',
+  suggestedItems: [
+    { nameKey: 'stories.handmade.items.s1', priceKey: 'stories.handmade.items.p1', durationKey: 'stories.handmade.items.d1', type: 'service' },
+    { nameKey: 'stories.handmade.items.s2', priceKey: 'stories.handmade.items.p2', durationKey: 'stories.handmade.items.d2', type: 'service' },
+    { nameKey: 'stories.handmade.items.s3', priceKey: 'stories.handmade.items.p3', durationKey: 'stories.handmade.items.d3', type: 'product' },
+    { nameKey: 'stories.handmade.items.s4', priceKey: 'stories.handmade.items.p4', type: 'product' },
+    { nameKey: 'stories.handmade.items.s5', priceKey: 'stories.handmade.items.p5', type: 'product' },
+    { nameKey: 'stories.handmade.items.s6', priceKey: 'stories.handmade.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.handmade.p5.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p5.s1.title',
+          descKey: 'stories.handmade.p5.s1.desc',
+          screenshot: { type: 'browser-phone', desktop: 'storefront.png', mobile: 'products.png' },
+        },
+        {
+          titleKey: 'stories.common.p5.s2.title',
+          descKey: 'stories.handmade.p5.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'orders-list.png', mobile: 'orders-list.png' },
+        },
+      ],
+    },
+    {
+      id: 'grow',
+      labelKey: 'stories.common.p6.label',
+      titleKey: 'stories.common.p6.title',
+      descKey: 'stories.handmade.p6.desc',
+      emoji: '📈',
+  suggestedItems: [
+    { nameKey: 'stories.handmade.items.s1', priceKey: 'stories.handmade.items.p1', durationKey: 'stories.handmade.items.d1', type: 'service' },
+    { nameKey: 'stories.handmade.items.s2', priceKey: 'stories.handmade.items.p2', durationKey: 'stories.handmade.items.d2', type: 'service' },
+    { nameKey: 'stories.handmade.items.s3', priceKey: 'stories.handmade.items.p3', durationKey: 'stories.handmade.items.d3', type: 'product' },
+    { nameKey: 'stories.handmade.items.s4', priceKey: 'stories.handmade.items.p4', type: 'product' },
+    { nameKey: 'stories.handmade.items.s5', priceKey: 'stories.handmade.items.p5', type: 'product' },
+    { nameKey: 'stories.handmade.items.s6', priceKey: 'stories.handmade.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.handmade.p6.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p6.s1.title',
+          descKey: 'stories.handmade.p6.s1.desc',
+          screenshot: { type: 'browser-phone', desktop: 'chat.png', mobile: 'following.png' },
+        },
+        {
+          titleKey: 'stories.common.p6.s2.title',
+          descKey: 'stories.handmade.p6.s2.desc',
+          screenshot: { type: 'browser', desktop: 'notifications.png' },
+        },
+      ],
+    },
+  ],
+}
+
+export default handmade

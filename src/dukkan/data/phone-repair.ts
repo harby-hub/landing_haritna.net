@@ -1,0 +1,278 @@
+import type { ProfessionConfig } from './types'
+
+const phoneRepair: ProfessionConfig = {
+  slug: 'phone-repair',
+  nameKey: 'stories.phoneRepair.name',
+  subtitleKey: 'stories.phoneRepair.subtitle',
+  emoji: '📱',
+  suggestedItems: [
+    { nameKey: 'stories.phoneRepair.items.s1', priceKey: 'stories.phoneRepair.items.p1', durationKey: 'stories.phoneRepair.items.d1', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s2', priceKey: 'stories.phoneRepair.items.p2', durationKey: 'stories.phoneRepair.items.d2', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s3', priceKey: 'stories.phoneRepair.items.p3', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s4', priceKey: 'stories.phoneRepair.items.p4', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s5', priceKey: 'stories.phoneRepair.items.p5', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s6', priceKey: 'stories.phoneRepair.items.p6', type: 'custom' },
+  ],
+  phases: [
+    {
+      id: 'register',
+      labelKey: 'stories.common.p1.label',
+      titleKey: 'stories.common.p1.title',
+      descKey: 'stories.phoneRepair.p1.desc',
+      emoji: '📱',
+  suggestedItems: [
+    { nameKey: 'stories.phoneRepair.items.s1', priceKey: 'stories.phoneRepair.items.p1', durationKey: 'stories.phoneRepair.items.d1', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s2', priceKey: 'stories.phoneRepair.items.p2', durationKey: 'stories.phoneRepair.items.d2', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s3', priceKey: 'stories.phoneRepair.items.p3', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s4', priceKey: 'stories.phoneRepair.items.p4', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s5', priceKey: 'stories.phoneRepair.items.p5', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s6', priceKey: 'stories.phoneRepair.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.phoneRepair.p1.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p1.s1.title',
+          descKey: 'stories.phoneRepair.p1.s1.desc',
+          bullets: ['stories.common.p1.s1.b1', 'stories.common.p1.s1.b2', 'stories.common.p1.s1.b3'],
+          screenshot: { type: 'phone', mobile: 'register.png' },
+        },
+        {
+          titleKey: 'stories.common.p1.s2.title',
+          descKey: 'stories.phoneRepair.p1.s2.desc',
+          bullets: ['stories.common.p1.s2.b1', 'stories.common.p1.s2.b2', 'stories.common.p1.s2.b3'],
+          screenshot: { type: 'phone', mobile: 'login.png' },
+        },
+      ],
+    },
+    {
+      id: 'company',
+      labelKey: 'stories.common.p2.label',
+      titleKey: 'stories.common.p2.title',
+      descKey: 'stories.phoneRepair.p2.desc',
+      emoji: '🏪',
+  suggestedItems: [
+    { nameKey: 'stories.phoneRepair.items.s1', priceKey: 'stories.phoneRepair.items.p1', durationKey: 'stories.phoneRepair.items.d1', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s2', priceKey: 'stories.phoneRepair.items.p2', durationKey: 'stories.phoneRepair.items.d2', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s3', priceKey: 'stories.phoneRepair.items.p3', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s4', priceKey: 'stories.phoneRepair.items.p4', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s5', priceKey: 'stories.phoneRepair.items.p5', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s6', priceKey: 'stories.phoneRepair.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.phoneRepair.p2.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p2.s1.title',
+          descKey: 'stories.phoneRepair.p2.s1.desc',
+          bullets: ['stories.common.p2.s1.b1', 'stories.common.p2.s1.b2', 'stories.common.p2.s1.b3'],
+          screenshot: { type: 'phone', mobile: 'company-create.png' },
+        },
+        {
+          titleKey: 'stories.common.p2.s2.title',
+          descKey: 'stories.phoneRepair.p2.s2.desc',
+          screenshot: { type: 'browser', desktop: 'dashboard.png', browserUrl: 'Your Company Dashboard' },
+        },
+      ],
+    },
+    {
+      id: 'services',
+      labelKey: 'stories.phoneRepair.p3.label',
+      titleKey: 'stories.phoneRepair.p3.title',
+      descKey: 'stories.phoneRepair.p3.desc',
+      emoji: '🔧',
+  suggestedItems: [
+    { nameKey: 'stories.phoneRepair.items.s1', priceKey: 'stories.phoneRepair.items.p1', durationKey: 'stories.phoneRepair.items.d1', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s2', priceKey: 'stories.phoneRepair.items.p2', durationKey: 'stories.phoneRepair.items.d2', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s3', priceKey: 'stories.phoneRepair.items.p3', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s4', priceKey: 'stories.phoneRepair.items.p4', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s5', priceKey: 'stories.phoneRepair.items.p5', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s6', priceKey: 'stories.phoneRepair.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.phoneRepair.p3.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p3.s1.title',
+          descKey: 'stories.phoneRepair.p3.s1.desc',
+          screenshot: { type: 'phone-pair', mobile: 'company-categories.png', mobileAlt: 'category-tree.png' },
+        },
+        {
+          titleKey: 'stories.phoneRepair.p3.s2.title',
+          descKey: 'stories.phoneRepair.p3.s2.desc',
+          bullets: ['stories.phoneRepair.p3.s2.b1', 'stories.phoneRepair.p3.s2.b2', 'stories.phoneRepair.p3.s2.b3'],
+          screenshot: { type: 'phone', mobile: 'product-create.png' },
+        },
+        {
+          titleKey: 'stories.common.p3.s3.title',
+          descKey: 'stories.phoneRepair.p3.s3.desc',
+          screenshot: { type: 'browser', desktop: 'company-products.png', browserUrl: 'Your Services & Products' },
+        },
+      ],
+    },
+    {
+      id: 'products',
+      labelKey: 'stories.phoneRepair.products.label',
+      titleKey: 'stories.phoneRepair.products.title',
+      descKey: 'stories.phoneRepair.products.desc',
+      emoji: '🛡️',
+  suggestedItems: [
+    { nameKey: 'stories.phoneRepair.items.s1', priceKey: 'stories.phoneRepair.items.p1', durationKey: 'stories.phoneRepair.items.d1', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s2', priceKey: 'stories.phoneRepair.items.p2', durationKey: 'stories.phoneRepair.items.d2', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s3', priceKey: 'stories.phoneRepair.items.p3', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s4', priceKey: 'stories.phoneRepair.items.p4', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s5', priceKey: 'stories.phoneRepair.items.p5', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s6', priceKey: 'stories.phoneRepair.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.phoneRepair.products.scenario',
+      steps: [
+        {
+          titleKey: 'stories.phoneRepair.products.s1.title',
+          descKey: 'stories.phoneRepair.products.s1.desc',
+          bullets: [
+            'stories.phoneRepair.products.s1.b1',
+            'stories.phoneRepair.products.s1.b2',
+            'stories.phoneRepair.products.s1.b3',
+          ],
+          screenshot: { type: 'phone', mobile: 'product-create.png' },
+        },
+        {
+          titleKey: 'stories.phoneRepair.products.s2.title',
+          descKey: 'stories.phoneRepair.products.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'storefront.png', mobile: 'products.png' },
+        },
+      ],
+    },
+    {
+      id: 'tracking',
+      labelKey: 'stories.phoneRepair.tracking.label',
+      titleKey: 'stories.phoneRepair.tracking.title',
+      descKey: 'stories.phoneRepair.tracking.desc',
+      emoji: '📋',
+  suggestedItems: [
+    { nameKey: 'stories.phoneRepair.items.s1', priceKey: 'stories.phoneRepair.items.p1', durationKey: 'stories.phoneRepair.items.d1', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s2', priceKey: 'stories.phoneRepair.items.p2', durationKey: 'stories.phoneRepair.items.d2', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s3', priceKey: 'stories.phoneRepair.items.p3', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s4', priceKey: 'stories.phoneRepair.items.p4', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s5', priceKey: 'stories.phoneRepair.items.p5', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s6', priceKey: 'stories.phoneRepair.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.phoneRepair.tracking.scenario',
+      steps: [
+        {
+          titleKey: 'stories.phoneRepair.tracking.s1.title',
+          descKey: 'stories.phoneRepair.tracking.s1.desc',
+          bullets: [
+            'stories.phoneRepair.tracking.s1.b1',
+            'stories.phoneRepair.tracking.s1.b2',
+            'stories.phoneRepair.tracking.s1.b3',
+          ],
+          screenshot: { type: 'browser', desktop: 'orders-list.png', browserUrl: 'Repair Orders' },
+        },
+        {
+          titleKey: 'stories.phoneRepair.tracking.s2.title',
+          descKey: 'stories.phoneRepair.tracking.s2.desc',
+          bullets: [
+            'stories.phoneRepair.tracking.s2.b1',
+            'stories.phoneRepair.tracking.s2.b2',
+            'stories.phoneRepair.tracking.s2.b3',
+          ],
+          screenshot: { type: 'browser-phone', desktop: 'orders-list.png', mobile: 'orders-list.png' },
+        },
+        {
+          titleKey: 'stories.phoneRepair.tracking.s3.title',
+          descKey: 'stories.phoneRepair.tracking.s3.desc',
+          bullets: [
+            'stories.phoneRepair.tracking.s3.b1',
+            'stories.phoneRepair.tracking.s3.b2',
+            'stories.phoneRepair.tracking.s3.b3',
+          ],
+          screenshot: { type: 'phone', mobile: 'orders-list.png' },
+        },
+      ],
+    },
+    {
+      id: 'page',
+      labelKey: 'stories.common.p4.label',
+      titleKey: 'stories.common.p4.title',
+      descKey: 'stories.phoneRepair.p4.desc',
+      emoji: '🎨',
+  suggestedItems: [
+    { nameKey: 'stories.phoneRepair.items.s1', priceKey: 'stories.phoneRepair.items.p1', durationKey: 'stories.phoneRepair.items.d1', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s2', priceKey: 'stories.phoneRepair.items.p2', durationKey: 'stories.phoneRepair.items.d2', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s3', priceKey: 'stories.phoneRepair.items.p3', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s4', priceKey: 'stories.phoneRepair.items.p4', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s5', priceKey: 'stories.phoneRepair.items.p5', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s6', priceKey: 'stories.phoneRepair.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.phoneRepair.p4.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p4.s1.title',
+          descKey: 'stories.phoneRepair.p4.s1.desc',
+          screenshot: { type: 'browser', desktop: 'page-builder.png', browserUrl: 'Page Builder' },
+        },
+        {
+          titleKey: 'stories.common.p4.s2.title',
+          descKey: 'stories.phoneRepair.p4.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'company-settings.png', mobile: 'company-settings.png' },
+        },
+      ],
+    },
+    {
+      id: 'orders',
+      labelKey: 'stories.common.p5.label',
+      titleKey: 'stories.common.p5.title',
+      descKey: 'stories.phoneRepair.p5.desc',
+      emoji: '🎉',
+  suggestedItems: [
+    { nameKey: 'stories.phoneRepair.items.s1', priceKey: 'stories.phoneRepair.items.p1', durationKey: 'stories.phoneRepair.items.d1', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s2', priceKey: 'stories.phoneRepair.items.p2', durationKey: 'stories.phoneRepair.items.d2', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s3', priceKey: 'stories.phoneRepair.items.p3', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s4', priceKey: 'stories.phoneRepair.items.p4', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s5', priceKey: 'stories.phoneRepair.items.p5', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s6', priceKey: 'stories.phoneRepair.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.phoneRepair.p5.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p5.s1.title',
+          descKey: 'stories.phoneRepair.p5.s1.desc',
+          screenshot: { type: 'browser-phone', desktop: 'storefront.png', mobile: 'products.png' },
+        },
+        {
+          titleKey: 'stories.common.p5.s2.title',
+          descKey: 'stories.phoneRepair.p5.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'orders-list.png', mobile: 'orders-list.png' },
+        },
+      ],
+    },
+    {
+      id: 'grow',
+      labelKey: 'stories.common.p6.label',
+      titleKey: 'stories.common.p6.title',
+      descKey: 'stories.phoneRepair.p6.desc',
+      emoji: '📈',
+  suggestedItems: [
+    { nameKey: 'stories.phoneRepair.items.s1', priceKey: 'stories.phoneRepair.items.p1', durationKey: 'stories.phoneRepair.items.d1', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s2', priceKey: 'stories.phoneRepair.items.p2', durationKey: 'stories.phoneRepair.items.d2', type: 'service' },
+    { nameKey: 'stories.phoneRepair.items.s3', priceKey: 'stories.phoneRepair.items.p3', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s4', priceKey: 'stories.phoneRepair.items.p4', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s5', priceKey: 'stories.phoneRepair.items.p5', type: 'product' },
+    { nameKey: 'stories.phoneRepair.items.s6', priceKey: 'stories.phoneRepair.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.phoneRepair.p6.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p6.s1.title',
+          descKey: 'stories.phoneRepair.p6.s1.desc',
+          screenshot: { type: 'browser-phone', desktop: 'chat.png', mobile: 'following.png' },
+        },
+        {
+          titleKey: 'stories.common.p6.s2.title',
+          descKey: 'stories.phoneRepair.p6.s2.desc',
+          screenshot: { type: 'browser', desktop: 'notifications.png' },
+        },
+      ],
+    },
+  ],
+}
+
+export default phoneRepair

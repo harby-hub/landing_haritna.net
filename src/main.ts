@@ -6,10 +6,12 @@ import '@fontsource/cairo/800.css'
 import './assets/main.css'
 import App from './App.vue'
 import i18n from './i18n'
+import router from './router'
 import { useTheme } from './composables/useTheme'
 
 const app = createApp( App )
 app.use( i18n )
+app.use( router )
 app.mount( '#app' )
 
 // One-time reset: clear old defaults (v1 used ar+dark)

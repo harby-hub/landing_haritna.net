@@ -1,0 +1,273 @@
+import type { ProfessionConfig } from './types'
+
+const candles: ProfessionConfig = {
+  slug: 'candles',
+  nameKey: 'stories.candles.name',
+  subtitleKey: 'stories.candles.subtitle',
+  emoji: '🕯️',
+  suggestedItems: [
+    { nameKey: 'stories.candles.items.s1', priceKey: 'stories.candles.items.p1', durationKey: 'stories.candles.items.d1', type: 'service' },
+    { nameKey: 'stories.candles.items.s2', priceKey: 'stories.candles.items.p2', type: 'service' },
+    { nameKey: 'stories.candles.items.s3', priceKey: 'stories.candles.items.p3', type: 'product' },
+    { nameKey: 'stories.candles.items.s4', priceKey: 'stories.candles.items.p4', durationKey: 'stories.candles.items.d4', type: 'product' },
+    { nameKey: 'stories.candles.items.s5', priceKey: 'stories.candles.items.p5', type: 'product' },
+    { nameKey: 'stories.candles.items.s6', priceKey: 'stories.candles.items.p6', type: 'custom' },
+  ],
+  phases: [
+    {
+      id: 'register',
+      labelKey: 'stories.common.p1.label',
+      titleKey: 'stories.common.p1.title',
+      descKey: 'stories.candles.p1.desc',
+      emoji: '📱',
+  suggestedItems: [
+    { nameKey: 'stories.candles.items.s1', priceKey: 'stories.candles.items.p1', durationKey: 'stories.candles.items.d1', type: 'service' },
+    { nameKey: 'stories.candles.items.s2', priceKey: 'stories.candles.items.p2', type: 'service' },
+    { nameKey: 'stories.candles.items.s3', priceKey: 'stories.candles.items.p3', type: 'product' },
+    { nameKey: 'stories.candles.items.s4', priceKey: 'stories.candles.items.p4', durationKey: 'stories.candles.items.d4', type: 'product' },
+    { nameKey: 'stories.candles.items.s5', priceKey: 'stories.candles.items.p5', type: 'product' },
+    { nameKey: 'stories.candles.items.s6', priceKey: 'stories.candles.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.candles.p1.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p1.s1.title',
+          descKey: 'stories.candles.p1.s1.desc',
+          bullets: ['stories.common.p1.s1.b1', 'stories.common.p1.s1.b2', 'stories.common.p1.s1.b3'],
+          screenshot: { type: 'phone', mobile: 'register.png' },
+        },
+        {
+          titleKey: 'stories.common.p1.s2.title',
+          descKey: 'stories.candles.p1.s2.desc',
+          bullets: ['stories.common.p1.s2.b1', 'stories.common.p1.s2.b2', 'stories.common.p1.s2.b3'],
+          screenshot: { type: 'phone', mobile: 'login.png' },
+        },
+      ],
+    },
+    {
+      id: 'company',
+      labelKey: 'stories.common.p2.label',
+      titleKey: 'stories.common.p2.title',
+      descKey: 'stories.candles.p2.desc',
+      emoji: '🏪',
+  suggestedItems: [
+    { nameKey: 'stories.candles.items.s1', priceKey: 'stories.candles.items.p1', durationKey: 'stories.candles.items.d1', type: 'service' },
+    { nameKey: 'stories.candles.items.s2', priceKey: 'stories.candles.items.p2', type: 'service' },
+    { nameKey: 'stories.candles.items.s3', priceKey: 'stories.candles.items.p3', type: 'product' },
+    { nameKey: 'stories.candles.items.s4', priceKey: 'stories.candles.items.p4', durationKey: 'stories.candles.items.d4', type: 'product' },
+    { nameKey: 'stories.candles.items.s5', priceKey: 'stories.candles.items.p5', type: 'product' },
+    { nameKey: 'stories.candles.items.s6', priceKey: 'stories.candles.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.candles.p2.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p2.s1.title',
+          descKey: 'stories.candles.p2.s1.desc',
+          bullets: ['stories.common.p2.s1.b1', 'stories.common.p2.s1.b2', 'stories.common.p2.s1.b3'],
+          screenshot: { type: 'phone', mobile: 'company-create.png' },
+        },
+        {
+          titleKey: 'stories.common.p2.s2.title',
+          descKey: 'stories.candles.p2.s2.desc',
+          screenshot: { type: 'browser', desktop: 'dashboard.png', browserUrl: 'Your Company Dashboard' },
+        },
+      ],
+    },
+    {
+      id: 'products',
+      labelKey: 'stories.candles.p3.label',
+      titleKey: 'stories.candles.p3.title',
+      descKey: 'stories.candles.p3.desc',
+      emoji: '🧼',
+  suggestedItems: [
+    { nameKey: 'stories.candles.items.s1', priceKey: 'stories.candles.items.p1', durationKey: 'stories.candles.items.d1', type: 'service' },
+    { nameKey: 'stories.candles.items.s2', priceKey: 'stories.candles.items.p2', type: 'service' },
+    { nameKey: 'stories.candles.items.s3', priceKey: 'stories.candles.items.p3', type: 'product' },
+    { nameKey: 'stories.candles.items.s4', priceKey: 'stories.candles.items.p4', durationKey: 'stories.candles.items.d4', type: 'product' },
+    { nameKey: 'stories.candles.items.s5', priceKey: 'stories.candles.items.p5', type: 'product' },
+    { nameKey: 'stories.candles.items.s6', priceKey: 'stories.candles.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.candles.p3.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p3.s1.title',
+          descKey: 'stories.candles.p3.s1.desc',
+          screenshot: { type: 'phone-pair', mobile: 'company-categories.png', mobileAlt: 'category-tree.png' },
+        },
+        {
+          titleKey: 'stories.candles.p3.s2.title',
+          descKey: 'stories.candles.p3.s2.desc',
+          bullets: ['stories.candles.p3.s2.b1', 'stories.candles.p3.s2.b2', 'stories.candles.p3.s2.b3'],
+          screenshot: { type: 'phone', mobile: 'product-create.png' },
+        },
+        {
+          titleKey: 'stories.common.p3.s3.title',
+          descKey: 'stories.candles.p3.s3.desc',
+          screenshot: { type: 'browser', desktop: 'company-products.png', browserUrl: 'Your Candles & Soap Collection' },
+        },
+      ],
+    },
+    {
+      id: 'custom-orders',
+      labelKey: 'stories.candles.custom.label',
+      titleKey: 'stories.candles.custom.title',
+      descKey: 'stories.candles.custom.desc',
+      emoji: '✨',
+  suggestedItems: [
+    { nameKey: 'stories.candles.items.s1', priceKey: 'stories.candles.items.p1', durationKey: 'stories.candles.items.d1', type: 'service' },
+    { nameKey: 'stories.candles.items.s2', priceKey: 'stories.candles.items.p2', type: 'service' },
+    { nameKey: 'stories.candles.items.s3', priceKey: 'stories.candles.items.p3', type: 'product' },
+    { nameKey: 'stories.candles.items.s4', priceKey: 'stories.candles.items.p4', durationKey: 'stories.candles.items.d4', type: 'product' },
+    { nameKey: 'stories.candles.items.s5', priceKey: 'stories.candles.items.p5', type: 'product' },
+    { nameKey: 'stories.candles.items.s6', priceKey: 'stories.candles.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.candles.custom.scenario',
+      steps: [
+        {
+          titleKey: 'stories.candles.custom.s1.title',
+          descKey: 'stories.candles.custom.s1.desc',
+          bullets: [
+            'stories.candles.custom.s1.b1',
+            'stories.candles.custom.s1.b2',
+            'stories.candles.custom.s1.b3',
+          ],
+          screenshot: { type: 'phone', mobile: 'product-create.png' },
+        },
+        {
+          titleKey: 'stories.candles.custom.s2.title',
+          descKey: 'stories.candles.custom.s2.desc',
+          bullets: [
+            'stories.candles.custom.s2.b1',
+            'stories.candles.custom.s2.b2',
+            'stories.candles.custom.s2.b3',
+          ],
+          screenshot: { type: 'browser-phone', desktop: 'orders-list.png', mobile: 'orders-list.png' },
+        },
+      ],
+    },
+    {
+      id: 'workshops',
+      labelKey: 'stories.candles.workshops.label',
+      titleKey: 'stories.candles.workshops.title',
+      descKey: 'stories.candles.workshops.desc',
+      emoji: '🎓',
+  suggestedItems: [
+    { nameKey: 'stories.candles.items.s1', priceKey: 'stories.candles.items.p1', durationKey: 'stories.candles.items.d1', type: 'service' },
+    { nameKey: 'stories.candles.items.s2', priceKey: 'stories.candles.items.p2', type: 'service' },
+    { nameKey: 'stories.candles.items.s3', priceKey: 'stories.candles.items.p3', type: 'product' },
+    { nameKey: 'stories.candles.items.s4', priceKey: 'stories.candles.items.p4', durationKey: 'stories.candles.items.d4', type: 'product' },
+    { nameKey: 'stories.candles.items.s5', priceKey: 'stories.candles.items.p5', type: 'product' },
+    { nameKey: 'stories.candles.items.s6', priceKey: 'stories.candles.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.candles.workshops.scenario',
+      steps: [
+        {
+          titleKey: 'stories.candles.workshops.s1.title',
+          descKey: 'stories.candles.workshops.s1.desc',
+          bullets: [
+            'stories.candles.workshops.s1.b1',
+            'stories.candles.workshops.s1.b2',
+            'stories.candles.workshops.s1.b3',
+          ],
+          screenshot: { type: 'phone', mobile: 'service-create.png' },
+        },
+        {
+          titleKey: 'stories.candles.workshops.s2.title',
+          descKey: 'stories.candles.workshops.s2.desc',
+          bullets: [
+            'stories.candles.workshops.s2.b1',
+            'stories.candles.workshops.s2.b2',
+            'stories.candles.workshops.s2.b3',
+          ],
+          screenshot: { type: 'browser-phone', desktop: 'storefront.png', mobile: 'products.png' },
+        },
+      ],
+    },
+    {
+      id: 'page',
+      labelKey: 'stories.common.p4.label',
+      titleKey: 'stories.common.p4.title',
+      descKey: 'stories.candles.p4.desc',
+      emoji: '🎨',
+  suggestedItems: [
+    { nameKey: 'stories.candles.items.s1', priceKey: 'stories.candles.items.p1', durationKey: 'stories.candles.items.d1', type: 'service' },
+    { nameKey: 'stories.candles.items.s2', priceKey: 'stories.candles.items.p2', type: 'service' },
+    { nameKey: 'stories.candles.items.s3', priceKey: 'stories.candles.items.p3', type: 'product' },
+    { nameKey: 'stories.candles.items.s4', priceKey: 'stories.candles.items.p4', durationKey: 'stories.candles.items.d4', type: 'product' },
+    { nameKey: 'stories.candles.items.s5', priceKey: 'stories.candles.items.p5', type: 'product' },
+    { nameKey: 'stories.candles.items.s6', priceKey: 'stories.candles.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.candles.p4.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p4.s1.title',
+          descKey: 'stories.candles.p4.s1.desc',
+          screenshot: { type: 'browser', desktop: 'page-builder.png', browserUrl: 'Page Builder' },
+        },
+        {
+          titleKey: 'stories.common.p4.s2.title',
+          descKey: 'stories.candles.p4.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'company-settings.png', mobile: 'company-settings.png' },
+        },
+      ],
+    },
+    {
+      id: 'orders',
+      labelKey: 'stories.common.p5.label',
+      titleKey: 'stories.common.p5.title',
+      descKey: 'stories.candles.p5.desc',
+      emoji: '🎉',
+  suggestedItems: [
+    { nameKey: 'stories.candles.items.s1', priceKey: 'stories.candles.items.p1', durationKey: 'stories.candles.items.d1', type: 'service' },
+    { nameKey: 'stories.candles.items.s2', priceKey: 'stories.candles.items.p2', type: 'service' },
+    { nameKey: 'stories.candles.items.s3', priceKey: 'stories.candles.items.p3', type: 'product' },
+    { nameKey: 'stories.candles.items.s4', priceKey: 'stories.candles.items.p4', durationKey: 'stories.candles.items.d4', type: 'product' },
+    { nameKey: 'stories.candles.items.s5', priceKey: 'stories.candles.items.p5', type: 'product' },
+    { nameKey: 'stories.candles.items.s6', priceKey: 'stories.candles.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.candles.p5.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p5.s1.title',
+          descKey: 'stories.candles.p5.s1.desc',
+          screenshot: { type: 'browser-phone', desktop: 'storefront.png', mobile: 'products.png' },
+        },
+        {
+          titleKey: 'stories.common.p5.s2.title',
+          descKey: 'stories.candles.p5.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'orders-list.png', mobile: 'orders-list.png' },
+        },
+      ],
+    },
+    {
+      id: 'grow',
+      labelKey: 'stories.common.p6.label',
+      titleKey: 'stories.common.p6.title',
+      descKey: 'stories.candles.p6.desc',
+      emoji: '📈',
+  suggestedItems: [
+    { nameKey: 'stories.candles.items.s1', priceKey: 'stories.candles.items.p1', durationKey: 'stories.candles.items.d1', type: 'service' },
+    { nameKey: 'stories.candles.items.s2', priceKey: 'stories.candles.items.p2', type: 'service' },
+    { nameKey: 'stories.candles.items.s3', priceKey: 'stories.candles.items.p3', type: 'product' },
+    { nameKey: 'stories.candles.items.s4', priceKey: 'stories.candles.items.p4', durationKey: 'stories.candles.items.d4', type: 'product' },
+    { nameKey: 'stories.candles.items.s5', priceKey: 'stories.candles.items.p5', type: 'product' },
+    { nameKey: 'stories.candles.items.s6', priceKey: 'stories.candles.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.candles.p6.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p6.s1.title',
+          descKey: 'stories.candles.p6.s1.desc',
+          screenshot: { type: 'browser-phone', desktop: 'chat.png', mobile: 'following.png' },
+        },
+        {
+          titleKey: 'stories.common.p6.s2.title',
+          descKey: 'stories.candles.p6.s2.desc',
+          screenshot: { type: 'browser', desktop: 'notifications.png' },
+        },
+      ],
+    },
+  ],
+}
+
+export default candles

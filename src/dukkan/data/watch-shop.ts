@@ -1,0 +1,283 @@
+import type { ProfessionConfig } from './types'
+
+const watchShop: ProfessionConfig = {
+  slug: 'watch-shop',
+  nameKey: 'stories.watchShop.name',
+  subtitleKey: 'stories.watchShop.subtitle',
+  emoji: '⌚',
+  suggestedItems: [
+    { nameKey: 'stories.watchShop.items.s1', priceKey: 'stories.watchShop.items.p1', durationKey: 'stories.watchShop.items.d1', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s2', priceKey: 'stories.watchShop.items.p2', durationKey: 'stories.watchShop.items.d2', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s3', priceKey: 'stories.watchShop.items.p3', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s4', priceKey: 'stories.watchShop.items.p4', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s5', priceKey: 'stories.watchShop.items.p5', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s6', priceKey: 'stories.watchShop.items.p6', type: 'custom' },
+  ],
+  phases: [
+    {
+      id: 'register',
+      labelKey: 'stories.common.p1.label',
+      titleKey: 'stories.common.p1.title',
+      descKey: 'stories.watchShop.p1.desc',
+      emoji: '📱',
+  suggestedItems: [
+    { nameKey: 'stories.watchShop.items.s1', priceKey: 'stories.watchShop.items.p1', durationKey: 'stories.watchShop.items.d1', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s2', priceKey: 'stories.watchShop.items.p2', durationKey: 'stories.watchShop.items.d2', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s3', priceKey: 'stories.watchShop.items.p3', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s4', priceKey: 'stories.watchShop.items.p4', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s5', priceKey: 'stories.watchShop.items.p5', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s6', priceKey: 'stories.watchShop.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.watchShop.p1.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p1.s1.title',
+          descKey: 'stories.watchShop.p1.s1.desc',
+          bullets: ['stories.common.p1.s1.b1', 'stories.common.p1.s1.b2', 'stories.common.p1.s1.b3'],
+          screenshot: { type: 'phone', mobile: 'register.png' },
+        },
+        {
+          titleKey: 'stories.common.p1.s2.title',
+          descKey: 'stories.watchShop.p1.s2.desc',
+          bullets: ['stories.common.p1.s2.b1', 'stories.common.p1.s2.b2', 'stories.common.p1.s2.b3'],
+          screenshot: { type: 'phone', mobile: 'login.png' },
+        },
+      ],
+    },
+    {
+      id: 'company',
+      labelKey: 'stories.common.p2.label',
+      titleKey: 'stories.common.p2.title',
+      descKey: 'stories.watchShop.p2.desc',
+      emoji: '🏪',
+  suggestedItems: [
+    { nameKey: 'stories.watchShop.items.s1', priceKey: 'stories.watchShop.items.p1', durationKey: 'stories.watchShop.items.d1', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s2', priceKey: 'stories.watchShop.items.p2', durationKey: 'stories.watchShop.items.d2', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s3', priceKey: 'stories.watchShop.items.p3', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s4', priceKey: 'stories.watchShop.items.p4', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s5', priceKey: 'stories.watchShop.items.p5', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s6', priceKey: 'stories.watchShop.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.watchShop.p2.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p2.s1.title',
+          descKey: 'stories.watchShop.p2.s1.desc',
+          bullets: ['stories.common.p2.s1.b1', 'stories.common.p2.s1.b2', 'stories.common.p2.s1.b3'],
+          screenshot: { type: 'phone', mobile: 'company-create.png' },
+        },
+        {
+          titleKey: 'stories.common.p2.s2.title',
+          descKey: 'stories.watchShop.p2.s2.desc',
+          screenshot: { type: 'browser', desktop: 'dashboard.png', browserUrl: 'Your Company Dashboard' },
+        },
+      ],
+    },
+    {
+      id: 'services',
+      labelKey: 'stories.watchShop.p3.label',
+      titleKey: 'stories.watchShop.p3.title',
+      descKey: 'stories.watchShop.p3.desc',
+      emoji: '🔧',
+  suggestedItems: [
+    { nameKey: 'stories.watchShop.items.s1', priceKey: 'stories.watchShop.items.p1', durationKey: 'stories.watchShop.items.d1', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s2', priceKey: 'stories.watchShop.items.p2', durationKey: 'stories.watchShop.items.d2', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s3', priceKey: 'stories.watchShop.items.p3', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s4', priceKey: 'stories.watchShop.items.p4', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s5', priceKey: 'stories.watchShop.items.p5', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s6', priceKey: 'stories.watchShop.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.watchShop.p3.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p3.s1.title',
+          descKey: 'stories.watchShop.p3.s1.desc',
+          screenshot: { type: 'phone-pair', mobile: 'company-categories.png', mobileAlt: 'category-tree.png' },
+        },
+        {
+          titleKey: 'stories.watchShop.p3.s2.title',
+          descKey: 'stories.watchShop.p3.s2.desc',
+          bullets: ['stories.watchShop.p3.s2.b1', 'stories.watchShop.p3.s2.b2', 'stories.watchShop.p3.s2.b3'],
+          screenshot: { type: 'phone', mobile: 'product-create.png' },
+        },
+        {
+          titleKey: 'stories.common.p3.s3.title',
+          descKey: 'stories.watchShop.p3.s3.desc',
+          screenshot: { type: 'browser', desktop: 'company-products.png', browserUrl: 'Your Services & Products' },
+        },
+      ],
+    },
+    {
+      id: 'collection',
+      labelKey: 'stories.watchShop.collection.label',
+      titleKey: 'stories.watchShop.collection.title',
+      descKey: 'stories.watchShop.collection.desc',
+      emoji: '🕰️',
+  suggestedItems: [
+    { nameKey: 'stories.watchShop.items.s1', priceKey: 'stories.watchShop.items.p1', durationKey: 'stories.watchShop.items.d1', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s2', priceKey: 'stories.watchShop.items.p2', durationKey: 'stories.watchShop.items.d2', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s3', priceKey: 'stories.watchShop.items.p3', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s4', priceKey: 'stories.watchShop.items.p4', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s5', priceKey: 'stories.watchShop.items.p5', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s6', priceKey: 'stories.watchShop.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.watchShop.collection.scenario',
+      steps: [
+        {
+          titleKey: 'stories.watchShop.collection.s1.title',
+          descKey: 'stories.watchShop.collection.s1.desc',
+          bullets: [
+            'stories.watchShop.collection.s1.b1',
+            'stories.watchShop.collection.s1.b2',
+            'stories.watchShop.collection.s1.b3',
+          ],
+          screenshot: { type: 'phone', mobile: 'product-create.png' },
+        },
+        {
+          titleKey: 'stories.watchShop.collection.s2.title',
+          descKey: 'stories.watchShop.collection.s2.desc',
+          bullets: [
+            'stories.watchShop.collection.s2.b1',
+            'stories.watchShop.collection.s2.b2',
+            'stories.watchShop.collection.s2.b3',
+          ],
+          screenshot: { type: 'browser-phone', desktop: 'storefront.png', mobile: 'products.png' },
+        },
+      ],
+    },
+    {
+      id: 'authenticity',
+      labelKey: 'stories.watchShop.authenticity.label',
+      titleKey: 'stories.watchShop.authenticity.title',
+      descKey: 'stories.watchShop.authenticity.desc',
+      emoji: '🛡️',
+  suggestedItems: [
+    { nameKey: 'stories.watchShop.items.s1', priceKey: 'stories.watchShop.items.p1', durationKey: 'stories.watchShop.items.d1', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s2', priceKey: 'stories.watchShop.items.p2', durationKey: 'stories.watchShop.items.d2', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s3', priceKey: 'stories.watchShop.items.p3', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s4', priceKey: 'stories.watchShop.items.p4', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s5', priceKey: 'stories.watchShop.items.p5', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s6', priceKey: 'stories.watchShop.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.watchShop.authenticity.scenario',
+      steps: [
+        {
+          titleKey: 'stories.watchShop.authenticity.s1.title',
+          descKey: 'stories.watchShop.authenticity.s1.desc',
+          bullets: [
+            'stories.watchShop.authenticity.s1.b1',
+            'stories.watchShop.authenticity.s1.b2',
+            'stories.watchShop.authenticity.s1.b3',
+          ],
+          screenshot: { type: 'browser', desktop: 'orders-list.png', browserUrl: 'Authenticity & Warranty' },
+        },
+        {
+          titleKey: 'stories.watchShop.authenticity.s2.title',
+          descKey: 'stories.watchShop.authenticity.s2.desc',
+          bullets: [
+            'stories.watchShop.authenticity.s2.b1',
+            'stories.watchShop.authenticity.s2.b2',
+            'stories.watchShop.authenticity.s2.b3',
+          ],
+          screenshot: { type: 'phone', mobile: 'orders-list.png' },
+        },
+        {
+          titleKey: 'stories.watchShop.authenticity.s3.title',
+          descKey: 'stories.watchShop.authenticity.s3.desc',
+          bullets: [
+            'stories.watchShop.authenticity.s3.b1',
+            'stories.watchShop.authenticity.s3.b2',
+            'stories.watchShop.authenticity.s3.b3',
+          ],
+          screenshot: { type: 'browser-phone', desktop: 'orders-list.png', mobile: 'orders-list.png' },
+        },
+      ],
+    },
+    {
+      id: 'page',
+      labelKey: 'stories.common.p4.label',
+      titleKey: 'stories.common.p4.title',
+      descKey: 'stories.watchShop.p4.desc',
+      emoji: '🎨',
+  suggestedItems: [
+    { nameKey: 'stories.watchShop.items.s1', priceKey: 'stories.watchShop.items.p1', durationKey: 'stories.watchShop.items.d1', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s2', priceKey: 'stories.watchShop.items.p2', durationKey: 'stories.watchShop.items.d2', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s3', priceKey: 'stories.watchShop.items.p3', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s4', priceKey: 'stories.watchShop.items.p4', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s5', priceKey: 'stories.watchShop.items.p5', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s6', priceKey: 'stories.watchShop.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.watchShop.p4.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p4.s1.title',
+          descKey: 'stories.watchShop.p4.s1.desc',
+          screenshot: { type: 'browser', desktop: 'page-builder.png', browserUrl: 'Page Builder' },
+        },
+        {
+          titleKey: 'stories.common.p4.s2.title',
+          descKey: 'stories.watchShop.p4.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'company-settings.png', mobile: 'company-settings.png' },
+        },
+      ],
+    },
+    {
+      id: 'orders',
+      labelKey: 'stories.common.p5.label',
+      titleKey: 'stories.common.p5.title',
+      descKey: 'stories.watchShop.p5.desc',
+      emoji: '🎉',
+  suggestedItems: [
+    { nameKey: 'stories.watchShop.items.s1', priceKey: 'stories.watchShop.items.p1', durationKey: 'stories.watchShop.items.d1', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s2', priceKey: 'stories.watchShop.items.p2', durationKey: 'stories.watchShop.items.d2', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s3', priceKey: 'stories.watchShop.items.p3', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s4', priceKey: 'stories.watchShop.items.p4', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s5', priceKey: 'stories.watchShop.items.p5', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s6', priceKey: 'stories.watchShop.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.watchShop.p5.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p5.s1.title',
+          descKey: 'stories.watchShop.p5.s1.desc',
+          screenshot: { type: 'browser-phone', desktop: 'storefront.png', mobile: 'products.png' },
+        },
+        {
+          titleKey: 'stories.common.p5.s2.title',
+          descKey: 'stories.watchShop.p5.s2.desc',
+          screenshot: { type: 'browser-phone', desktop: 'orders-list.png', mobile: 'orders-list.png' },
+        },
+      ],
+    },
+    {
+      id: 'grow',
+      labelKey: 'stories.common.p6.label',
+      titleKey: 'stories.common.p6.title',
+      descKey: 'stories.watchShop.p6.desc',
+      emoji: '📈',
+  suggestedItems: [
+    { nameKey: 'stories.watchShop.items.s1', priceKey: 'stories.watchShop.items.p1', durationKey: 'stories.watchShop.items.d1', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s2', priceKey: 'stories.watchShop.items.p2', durationKey: 'stories.watchShop.items.d2', type: 'service' },
+    { nameKey: 'stories.watchShop.items.s3', priceKey: 'stories.watchShop.items.p3', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s4', priceKey: 'stories.watchShop.items.p4', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s5', priceKey: 'stories.watchShop.items.p5', type: 'product' },
+    { nameKey: 'stories.watchShop.items.s6', priceKey: 'stories.watchShop.items.p6', type: 'custom' },
+  ],
+      scenarioKey: 'stories.watchShop.p6.scenario',
+      steps: [
+        {
+          titleKey: 'stories.common.p6.s1.title',
+          descKey: 'stories.watchShop.p6.s1.desc',
+          screenshot: { type: 'browser-phone', desktop: 'chat.png', mobile: 'following.png' },
+        },
+        {
+          titleKey: 'stories.common.p6.s2.title',
+          descKey: 'stories.watchShop.p6.s2.desc',
+          screenshot: { type: 'browser', desktop: 'notifications.png' },
+        },
+      ],
+    },
+  ],
+}
+
+export default watchShop
