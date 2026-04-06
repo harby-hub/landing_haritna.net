@@ -706,7 +706,7 @@ onUnmounted( () => window.removeEventListener( 'scroll', handleScroll ) )
           </ScrollReveal>
         </div>
         <ScrollReveal>
-          <BrowserMockup :src="`${D}/pos-terminal.png`" url="POS Terminal — Branch Select" alt="POS Terminal" />
+          <BrowserMockup :src="`${D}/pos-terminal.png`" url="POS Terminal — Giza Branch" alt="POS Terminal" />
         </ScrollReveal>
       </section>
 

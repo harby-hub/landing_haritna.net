@@ -288,7 +288,7 @@ export default {
       'Register delivery drivers, manage their vehicles, activate/deactivate them, track their location in real-time, and set delivery pricing rules per vehicle type.',
     staff_step5: 'Page builder',
     staff_step5_desc:
-      "Design the app's landing page using 12 section types: hero banner, features grid, testimonials, pricing plans, product showcase, category grid, and more. Deploy, rollback, and manage versions.",
+      "Design the app's landing page using 22 section types: hero banner, features grid, testimonials, pricing plans, product showcase, category grid, and more. Deploy, rollback, and manage versions.",
     delivery_title: 'Delivery portal',
     delivery_desc:
       'For delivery drivers. Accept orders, track your deliveries, manage vehicles, and see your earnings.',
@@ -348,7 +348,7 @@ export default {
     delivery_history_desc:
       'All your completed, cancelled, and rejected deliveries with dates, amounts, and status.',
     page_builder_sections:
-      '12 section types available: Hero Banner, Features Grid, Call to Action, Testimonials, Pricing Plans, Stats Counter, Text Block, Image Gallery, Product Showcase, Category Grid, Special Offers, Brands Slider.',
+      '22 section types available: Hero Banner, Features Grid, Call to Action, Testimonials, Pricing Plans, Stats Counter, Text Block, Image Gallery, Product Showcase, Category Grid, Special Offers, Brands Slider.',
     page_builder_versioning:
       'Every deploy creates a version snapshot. You can rollback to any previous version or restore a draft.',
     pricing_rules_title: 'Delivery Pricing Rules',
@@ -405,8 +405,8 @@ export default {
       s2: {
         tag: 'Step 2 — Sign In',
         title: 'Three Portals, One Login Screen',
-        desc: 'Switch between Customer, Delivery, and Staff tabs on one login screen. Each guard opens a completely different portal with its own features.',
-        b1: '3 independent authentication guards',
+        desc: 'Switch between Customer and Delivery tabs on one login screen. Each portal opens a completely different experience with its own features.',
+        b1: 'Separate Customer and Delivery portals',
         b2: 'Email + Password + OTP dual verification',
         b3: 'Language (AR/EN) and theme toggle on login',
       },
@@ -556,10 +556,10 @@ export default {
     f9: {
       label: 'No-Code Builder',
       title: 'Build Your Company Storefront',
-      desc: '12 drag-and-drop section types, custom branding, and version control — professional pages without code.',
+      desc: '22 drag-and-drop section types, custom branding, and version control — professional pages without code.',
       sections: {
-        title: '12 Section Types',
-        desc: 'Hero Banner, Product Showcase, Category Grid, Stats Counter, Testimonials, Call to Action, Text Block, Image Gallery, Features Grid, Pricing Plans, Special Offers, and Brands Slider.',
+        title: '22 Section Types',
+        desc: 'Hero Banner, Product Showcase, Category Grid, Stats Counter, Testimonials, Call to Action, Text Block, Image Gallery, Features Grid, Pricing Plans, Special Offers, Brands Slider, Audience Tabs, Bento Grid, How It Works, Platforms Banner, Pain Points, Solution Overview, App Showcase, Demo CTA, Member Grid, and Social Links.',
       },
       result: {
         title: 'Professional Branded Pages',
@@ -691,13 +691,13 @@ export default {
     f15: {
       label: 'Promotions',
       title: 'Coupons & Discount Codes',
-      desc: 'Create targeted discount campaigns with flexible coupon rules — percentage or fixed amount, usage limits, and expiry dates.',
+      desc: 'Create targeted discount campaigns — percentage, fixed amount, free shipping, or buy-one-get-one — with smart usage limits, expiry dates, and category targeting.',
       scenario: 'Sara wants to boost sales for her bakery during Ramadan. She creates a "RAMADAN25" coupon for 25% off, limits it to 100 uses, and shares it on social media.',
       s1: {
         tag: 'Create',
         title: 'Design Your Coupon',
-        desc: 'Set coupon code, discount type (percentage or fixed), amount, minimum order value, usage limit per customer, and expiry date. Attach a promotional image and QR code for in-store scanning.',
-        b1: 'Percentage or fixed amount discounts',
+        desc: 'Set coupon code, discount type (percentage, fixed, free shipping, or BOGO), amount, minimum order value, usage limit per customer, and expiry date. Each coupon gets a unique QR code for in-store scanning.',
+        b1: '4 discount types: percentage, fixed, free shipping & BOGO',
         b2: 'Per-customer and total usage limits',
         b3: 'QR code for in-store POS redemption',
       },
