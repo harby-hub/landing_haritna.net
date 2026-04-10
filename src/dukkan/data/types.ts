@@ -21,6 +21,7 @@ export interface Phase {
   descKey: string
   emoji: string
   scenarioKey: string
+  suggestedItems?: SuggestedItem[]
   steps: Step[]
 }
 
