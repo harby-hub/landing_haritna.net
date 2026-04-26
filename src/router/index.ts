@@ -13,6 +13,22 @@ const router = createRouter( {
       name: 'guide',
       component: () => import( '@/pages/GuidePage.vue' ),
     },
+    // Legal pages (hosted on haritna.net for SSO provider compliance)
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: () => import( '@/pages/PrivacyPage.vue' ),
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      component: () => import( '@/pages/TermsPage.vue' ),
+    },
+    {
+      path: '/data-deletion',
+      name: 'data-deletion',
+      component: () => import( '@/pages/DataDeletionPage.vue' ),
+    },
     // Dukkan routes
     {
       path: '/dukkan',

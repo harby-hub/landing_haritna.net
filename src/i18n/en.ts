@@ -732,4 +732,295 @@ export default {
     },
     footer: 'تجارة بأصولها.. وتكنولوجيا بمستقبلها',
   },
+  legal: {
+    last_updated: 'Last updated',
+    effective_date: '2026-04-25',
+    back_home: 'Back to Home',
+    contact_email: 'support@haritna.net',
+    company_name: 'Haritna Technologies',
+    operator_name: 'Mahmoud Sami Khirallah',
+    operator_country: 'Arab Republic of Egypt',
+    product_name: 'Haretna Dukkan (حارتنا دكان)',
+    product_url: 'https://dukkan.haritna.net',
+    landing_url: 'https://haritna.net',
+    pilot_notice: 'Pilot phase notice: The Service is currently operated by Mahmoud Sami Khirallah as an individual developer based in the Arab Republic of Egypt, doing business under the planned trading name "Haritna Technologies". Once incorporation is complete (expected within ~1 month of the effective date), the data controller will become Haritna Technologies and this notice will be updated. Users will be notified of the transition.',
+    nav: {
+      privacy: 'Privacy Policy',
+      terms: 'Terms of Service',
+      data_deletion: 'Data Deletion',
+    },
+  },
+  privacy: {
+    title: 'Privacy Policy',
+    subtitle: 'How Haretna Dukkan collects, uses, and protects your information.',
+    intro: 'This Privacy Policy describes how the operator ("we", "us", "our") collects, uses, and shares information about you when you use (a) the marketing website at haritna.net and (b) Haretna Dukkan (حارتنا دكان) — a multi-tenant e-commerce platform — through dukkan.haritna.net, tenant subdomains under *.dukkan.haritna.net, our mobile applications, and related services (collectively, the "Service"). By using the Service, you agree to the collection and use of information in accordance with this policy. The Service is currently operated by Mahmoud Sami Khirallah as an individual developer based in the Arab Republic of Egypt, doing business under the planned trading name "Haritna Technologies"; once incorporation completes, the data controller will become Haritna Technologies and this Policy will be updated with notice to you.',
+    sections: {
+      info_collected: {
+        title: '1. Information We Collect',
+        intro: 'We collect information to provide and improve our Service. The categories of personal information we collect depend on how you use the Service.',
+        from_you: {
+          heading: 'Information you provide directly',
+          items: [
+            'Account information: name, email address, phone number, password (hashed), profile picture, preferred language, country, and currency.',
+            'Business information (for merchants): business name, address, tax/commercial registration, branches, products, and bank/payment details.',
+            'Order and transaction information: products ordered, delivery addresses, payment method (we do not store full card data — see "Payments" below), order history, and reviews you post.',
+            'Communications: messages, chat, support tickets, ratings, and any feedback you submit.',
+          ],
+        },
+        from_sso: {
+          heading: 'Information from social login (Single Sign-On)',
+          intro: 'When you sign in using a third-party identity provider, we receive limited profile information from that provider. The exact data depends on the provider and on the permissions you grant:',
+          items: [
+            'Google: Google account ID, name, email address, profile picture, locale.',
+            'Apple (Sign in with Apple): unique Apple user ID, full name (first sign-in only), email address (real or Apple-relay alias).',
+            'Facebook (Meta): Facebook user ID, name, email address (if granted), profile picture.',
+            'Microsoft (Entra ID): Microsoft user ID, name, email address, profile picture.',
+            'LinkedIn: LinkedIn user ID, name, email address, profile picture.',
+            'TikTok: TikTok open ID, display name, avatar (email may not be returned).',
+            'Snapchat: Snap external ID, display name, Bitmoji avatar (email is not returned).',
+          ],
+          note: 'For new users signing up via social login, we additionally require you to provide and verify your phone number before completing registration. This is necessary to enable order delivery, customer support, and order notifications.',
+        },
+        automatic: {
+          heading: 'Information collected automatically',
+          items: [
+            'Device and connection data: IP address, device type, operating system, browser, app version, and language settings.',
+            'Usage data: pages and screens visited, features used, search queries, click events, session duration.',
+            'Cookies and similar technologies: see Section 9.',
+            'Approximate location derived from IP address (used for currency, language, and tax calculations).',
+            'Precise GPS location (only when explicitly granted by delivery personnel and customers using delivery features).',
+          ],
+        },
+      },
+      how_used: {
+        title: '2. How We Use Your Information',
+        items: [
+          'Create and manage your account, authenticate you, and keep your account secure.',
+          'Provide the core e-commerce features: list and search products, place and fulfill orders, process payments, and coordinate delivery.',
+          'Communicate with you: order updates, account notifications, customer support replies, and (with your consent) marketing communications.',
+          'Improve and personalize the Service: product recommendations, search results, fraud detection, and analytics.',
+          'Comply with legal, regulatory, and tax obligations in the countries we operate in.',
+          'Enforce our Terms of Service and protect users from abuse, spam, and fraud.',
+        ],
+      },
+      sharing: {
+        title: '3. How We Share Your Information',
+        intro: 'We do not sell your personal information. We share it only as described below:',
+        items: [
+          {
+            heading: 'With merchants you interact with',
+            body: 'When you place an order, your name, delivery address, phone, and order details are shared with the merchant fulfilling the order so they can prepare and ship it.',
+          },
+          {
+            heading: 'With delivery partners',
+            body: 'Your delivery address, phone number, and order details are shared with the delivery person assigned to your order.',
+          },
+          {
+            heading: 'With payment processors',
+            body: 'Payment data is transmitted directly to PCI-compliant payment gateways (e.g., Stripe, Tap, Paymob) so we never receive or store your full card details.',
+          },
+          {
+            heading: 'With service providers (sub-processors)',
+            body: 'Cloud infrastructure (Cloudflare, R2, Neon PostgreSQL), email/SMS providers, analytics, and AI gateway providers, all under contractual confidentiality and data-processing terms.',
+          },
+          {
+            heading: 'For legal reasons',
+            body: 'Law enforcement, courts, regulators, or other authorities when we are legally compelled or to protect rights, safety, and integrity.',
+          },
+          {
+            heading: 'In a corporate transaction',
+            body: 'In connection with a merger, acquisition, financing, or sale of assets — with notice to you where required.',
+          },
+        ],
+      },
+      retention: {
+        title: '4. Data Retention',
+        body: 'We retain personal information for as long as your account is active and for a reasonable period afterwards to comply with legal, accounting, and audit requirements (typically 7 years for transaction records). When you delete your account, personal data is anonymized or removed from active systems within 30 days, except where retention is required by law.',
+      },
+      security: {
+        title: '5. Data Security',
+        body: 'We use industry-standard safeguards including encryption in transit (HTTPS/TLS), encryption at rest for sensitive fields (passwords, OAuth tokens, payment configuration), least-privilege access controls, multi-tenant database isolation, and regular security reviews. No method of transmission or storage is 100% secure; in the event of a data breach affecting your personal information we will notify you and the relevant authorities as required by applicable law.',
+      },
+      rights: {
+        title: '6. Your Rights',
+        intro: 'Subject to applicable law, you have the following rights regarding your personal information:',
+        items: [
+          'Access: request a copy of the personal information we hold about you.',
+          'Correction: ask us to correct inaccurate or incomplete data.',
+          'Deletion: request deletion of your account and personal data (see our Data Deletion page for instructions).',
+          'Portability: request a machine-readable export of your data.',
+          'Objection / Restriction: object to certain processing or ask us to restrict it.',
+          'Withdraw consent: where processing is based on consent, you can withdraw at any time.',
+          'Revoke social login: you can disconnect any linked social account from your profile settings, and you can revoke our access from your provider\'s security settings (e.g., google.com/security, appleid.apple.com).',
+        ],
+        contact: 'To exercise any of these rights, email {email} or use the in-app data request tools.',
+      },
+      children: {
+        title: '7. Children\'s Privacy',
+        body: 'The Service is not directed to children under 16. We do not knowingly collect personal information from children under 16. If you become aware that a child has provided us with personal information, please contact us and we will delete it.',
+      },
+      international: {
+        title: '8. International Data Transfers',
+        body: 'Haretna Dukkan operates primarily for users in the Middle East, North Africa, and globally. Your information may be processed and stored in countries other than your own (notably the European Union and the United States, where some sub-processors are based). We rely on contractual safeguards (such as Standard Contractual Clauses) to protect transferred data.',
+      },
+      cookies: {
+        title: '9. Cookies and Similar Technologies',
+        body: 'We use cookies and similar technologies (local storage, IndexedDB) for authentication, session management, language and theme preferences, and analytics. You can control cookies through your browser settings. Disabling essential cookies may break sign-in and order flows.',
+      },
+      changes: {
+        title: '10. Changes to This Policy',
+        body: 'We may update this Privacy Policy from time to time. Material changes will be communicated through the app, by email, or by posting a prominent notice on dukkan.haritna.net. Continued use of the Service after changes take effect constitutes acceptance.',
+      },
+      contact: {
+        title: '11. Contact Us',
+        body: 'For privacy questions, complaints, or to exercise your rights, contact us at:',
+        email: 'support@haritna.net',
+        controller: 'Current Data Controller (pilot phase): Mahmoud Sami Khirallah, individual developer, Arab Republic of Egypt. Planned successor: Haritna Technologies (post-incorporation).',
+      },
+    },
+  },
+  terms: {
+    title: 'Terms of Service',
+    subtitle: 'The agreement between you and Haretna Dukkan.',
+    intro: 'Welcome to Haretna Dukkan (حارتنا دكان). These Terms of Service ("Terms") govern your access to and use of our website, mobile apps, and related services. The Service is currently operated by Mahmoud Sami Khirallah as an individual developer based in the Arab Republic of Egypt, doing business under the planned trading name "Haritna Technologies" ("we", "us"). Once Haritna Technologies is incorporated (expected within ~1 month of the effective date), it will become the contracting party and these Terms will be updated. By creating an account or otherwise using the Service, you agree to be bound by these Terms. If you do not agree, do not use the Service.',
+    sections: {
+      eligibility: {
+        title: '1. Eligibility & Account Registration',
+        items: [
+          'You must be at least 16 years old, or the age of legal majority in your jurisdiction, to use the Service.',
+          'You agree to provide accurate, current, and complete information when creating an account, including a valid phone number which we may verify by SMS one-time-password (OTP).',
+          'You are responsible for maintaining the confidentiality of your credentials and for all activity under your account.',
+          'You may sign in with a supported social provider (Google, Apple, Facebook, Microsoft, LinkedIn, TikTok, Snapchat). Linking a social account does not transfer ownership; you remain the account holder.',
+          'Accounts are personal. Sharing accounts is not permitted unless explicitly enabled (e.g., a customer adding members to a company).',
+        ],
+      },
+      roles: {
+        title: '2. Roles on the Platform',
+        intro: 'Haretna Dukkan supports four user roles, each with specific terms:',
+        items: [
+          'Customer: places orders from merchants on the platform. Subject to consumer protection laws of your country.',
+          'Merchant (Company / Staff): lists products, manages orders, and uses fulfillment tools. Responsible for the accuracy of listings, the legality of products, and tax/regulatory compliance.',
+          'Delivery: provides last-mile logistics services. Responsible for safe and timely delivery and for any required licenses.',
+          'Shop visitor: may browse public storefronts without an account.',
+        ],
+      },
+      conduct: {
+        title: '3. Acceptable Use',
+        intro: 'You will not, and will not permit anyone to:',
+        items: [
+          'Violate any applicable law, regulation, or third-party right.',
+          'Sell or list prohibited goods (firearms, narcotics, counterfeit items, stolen goods, etc.).',
+          'Upload malicious code, attempt unauthorized access, or disrupt the Service.',
+          'Scrape, harvest, or use the Service for purposes other than intended.',
+          'Impersonate another person or misrepresent your affiliation.',
+          'Use automated systems to create accounts, place orders, or post content without our written permission.',
+        ],
+      },
+      orders: {
+        title: '4. Orders, Payments, and Refunds',
+        items: [
+          'Prices, taxes, and fees are displayed at checkout. Currency is determined automatically based on your phone number country.',
+          'Payments are processed via third-party gateways. We do not store full card data.',
+          'Refunds and returns follow the merchant\'s policy and applicable consumer protection law (e.g., 14-day right of withdrawal in the EU).',
+          'In case of disputes between you and a merchant, we may mediate but are not party to the underlying transaction.',
+        ],
+      },
+      ip: {
+        title: '5. Intellectual Property',
+        items: [
+          'The Service, including its software, design, branding, and content created by us, is owned by Haritna Technologies and protected by intellectual property laws.',
+          'You retain ownership of content you upload (product images, text, reviews). By uploading, you grant us a worldwide, royalty-free license to host, display, distribute, and modify the content as necessary to operate the Service.',
+          'You must have all rights and permissions for content you upload.',
+        ],
+      },
+      termination: {
+        title: '6. Suspension and Termination',
+        body: 'We may suspend or terminate your account if you breach these Terms, abuse the Service, or for legal reasons. You may close your account at any time from your profile settings. Upon termination, your access ends, and we will delete or anonymize your data per the Privacy Policy.',
+      },
+      disclaimers: {
+        title: '7. Disclaimers',
+        body: 'The Service is provided "as is" and "as available" without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, and non-infringement. We do not guarantee uninterrupted or error-free operation.',
+      },
+      liability: {
+        title: '8. Limitation of Liability',
+        body: 'To the maximum extent permitted by law, the operator will not be liable for indirect, incidental, special, consequential, or punitive damages, or any loss of profits, revenues, data, or goodwill. Our aggregate liability for direct damages will not exceed the amount you paid to us in the 12 months preceding the claim.',
+      },
+      indemnity: {
+        title: '9. Indemnification',
+        body: 'You agree to indemnify and hold the operator harmless from claims arising out of your breach of these Terms, your content, or your unlawful use of the Service.',
+      },
+      law: {
+        title: '10. Governing Law and Disputes',
+        body: 'These Terms are governed by the laws of the Arab Republic of Egypt during the pilot phase, and after incorporation by the laws of the jurisdiction where Haritna Technologies is registered. Disputes will be resolved through good-faith negotiation first, and otherwise by the competent courts of the applicable jurisdiction. Consumer rights granted by mandatory local law in your country of residence are not affected.',
+      },
+      changes: {
+        title: '11. Changes to These Terms',
+        body: 'We may update these Terms from time to time. We will provide at least 30 days\' notice for material changes that adversely affect your rights. Continued use after the effective date constitutes acceptance.',
+      },
+      contact: {
+        title: '12. Contact',
+        body: 'For questions about these Terms, contact us at support@haritna.net.',
+      },
+    },
+  },
+  data_deletion: {
+    title: 'Account & Data Deletion',
+    subtitle: 'How to request deletion of your Haretna Dukkan account and personal data.',
+    intro: 'We respect your right to delete your data. This page explains the steps to permanently remove your account and the personal information we hold about you.',
+    sections: {
+      in_app: {
+        title: 'Option 1 — Delete from the app (recommended)',
+        steps: [
+          'Sign in to dukkan.haritna.net (or your tenant subdomain) on web or mobile.',
+          'Go to Profile → Settings → Account.',
+          'Tap "Delete my account" and confirm with your password or OTP.',
+          'Your account will be deactivated immediately and permanently deleted within 30 days.',
+        ],
+      },
+      email: {
+        title: 'Option 2 — Email request',
+        body: 'Send an email to support@haritna.net from the address registered on your account with the subject "Delete my account". Include your full name, the phone number on the account, and (if applicable) the company you belong to. We will verify your identity and confirm deletion within 30 days.',
+      },
+      what_deleted: {
+        title: 'What will be deleted',
+        items: [
+          'Your profile (name, email, phone, avatar, password, preferences).',
+          'Linked social accounts (the link, not your account on the third-party provider).',
+          'Personal addresses and saved payment methods.',
+          'Reviews, ratings, comments, and chat messages tied to your identity (or anonymized if removal would disrupt other users\' content).',
+          'Order history personal details (orders themselves are retained in anonymized form for legal/accounting purposes — typically 7 years).',
+          'OAuth tokens, refresh tokens, and session data.',
+        ],
+      },
+      retained: {
+        title: 'What may be retained',
+        items: [
+          'Anonymized transaction records, retained for tax, accounting, and audit obligations (commonly 7 years).',
+          'Aggregate usage statistics that cannot be linked back to you.',
+          'Information we are required by law to retain.',
+        ],
+      },
+      timeline: {
+        title: 'Timeline',
+        body: 'Deactivation is immediate. Full deletion completes within 30 days. We will email you a confirmation when deletion is complete.',
+      },
+      revoke_social: {
+        title: 'Revoking social login access',
+        body: 'Deleting your account here does not delete your account at Google, Apple, Facebook, etc. To revoke our app\'s access from your social provider, visit:',
+        items: [
+          'Google: myaccount.google.com → Security → Third-party access',
+          'Apple: appleid.apple.com → Sign in with Apple → Apps Using Apple ID',
+          'Facebook: facebook.com/settings → Apps and Websites',
+          'Microsoft: account.live.com/consent/Manage',
+          'LinkedIn: linkedin.com/psettings/permitted-services',
+          'TikTok: tiktok.com → Settings → Security → Manage app permissions',
+          'Snapchat: accounts.snapchat.com → Apps That Use Snapchat',
+        ],
+      },
+      contact: {
+        title: 'Contact',
+        body: 'Questions or problems? Email support@haritna.net.',
+      },
+    },
+  },
 }
