@@ -97,7 +97,7 @@ onUnmounted( () => window.removeEventListener( 'scroll', handleScroll ) )
         </ScrollReveal>
         <ScrollReveal :delay="300">
           <div class="relative max-w-[900px] mx-auto" style="perspective: 1200px;">
-            <BrowserMockup :src="`${D}/products.png`" url="dukkan-app.haritna.net/shop/products" alt="Browse Products" />
+            <BrowserMockup :src="`${D}/products.png`" url="dukkan.haritna.net/shop/products" alt="Browse Products" />
             <div class="absolute -right-2 -bottom-6 z-10 hidden sm:block">
               <PhoneMockup :src="`${M}/storefront.png`" alt="Mobile storefront" size="sm" />
             </div>
@@ -239,7 +239,7 @@ onUnmounted( () => window.removeEventListener( 'scroll', handleScroll ) )
             </ul>
           </ScrollReveal>
           <ScrollReveal direction="right">
-            <BrowserMockup :src="`${D}/storefront.png`" url="dukkan-app.haritna.net" alt="Storefront" />
+            <BrowserMockup :src="`${D}/storefront.png`" url="dukkan.haritna.net" alt="Storefront" />
           </ScrollReveal>
         </div>
 
